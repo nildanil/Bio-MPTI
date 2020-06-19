@@ -13,10 +13,9 @@ match_array.each_with_index do |symbol,index |   #цикл, который вс�
 end #тут цикл кончился
 
 if count_of_dismatches == 0 #если счетчик мутаций не сдвинулся с места, то выводим сообщение
-  puts "the alignments are gomologic"
-  puts "no dismatches"
+  puts "Последовательности гомологичны"
+  puts "Несовпадения не найдены"
 else #иначе выводим номера мутаций и их количество
-  puts "the places, where mutation was found:"
   puts list_of_numbers_of_dismatches.join("|")
-  puts count_of_dismatches
+  puts "Количество несовпадений: #{count_of_dismatches}"
 end
